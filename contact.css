@@ -1,0 +1,138 @@
+* {
+  font-family: "Inria Sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #ffc15e;
+  --bg: #ce6a85;
+  --secundario: #77324d;
+  --border: 0.1rem solid #ffc15e;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container h1 {
+  color: var(--secundario);
+}
+
+form {
+  width: 100%;
+  max-width: 30rem;
+  padding: 2rem;
+  border-radius: 1.125rem;
+  background: var(--main-color);
+}
+
+.form-container {
+  margin: 0 auto;
+  max-width: 30rem;
+  padding: 0.5rem;
+  border: 0.125rem solid transparent;
+  border-radius: 1.125rem;
+  color: #000;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+}
+
+label {
+  margin-bottom: 0.5rem !important;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  font: inherit;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  margin-bottom: 1.5rem !important;
+  color: var(--secundario);
+  background: lightyellow;
+  border: 0.125rem solid transparent;
+  border-radius: 1.125rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3125rem rebeccapurple;
+}
+
+textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 99px !important;
+  color: #000;
+  background: rebeccapurple;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: var(--secundario);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #555b69;
+}
+
+.error-message .error {
+  color: red;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  background-color: #33cc33;
+}
+
+.message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightgrey;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.message h1 {
+  margin-bottom: 1rem;
+}
+
+.close-button {
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  text-decoration: underline;
+}

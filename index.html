@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Início</title>
+
+    <!-- Link para o arquivo CSS do Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Link para o arquivo CSS do Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Link para o arquivo de estilo personalizado home.css -->
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="navbar-footer.css" />
+  </head>
+  <body>
+    <!-- Navbar (barra de navegação) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/images/logo.png" alt="Logo" />
+        PointFair
+      </a>
+
+      <!-- Botão de toggler para dispositivos móveis -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Itens do menu da navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dúvidas Frequentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-sm btn-dark" id="dark-theme-toggle">
+              <i class="fas fa-adjust"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+          <h1>PointFair</h1>
+          <h3>
+            Compre consciente, valorize o autônomo: Juntos por um comércio justo
+            e diverso!
+          </h3>
+          <p>O PointFair tem o objetivo de divulgar feirantes.</p>
+          <div class="buttons text-center">
+            <a href="">
+              <button class="btn btn-primary">Baixar App</button>
+            </a>
+            <a href="/sobrenos" class="saiba-mais">
+              Saiba mais
+              <span
+                class="iconify"
+                data-icon="eva:arrow-ios-forward-fill"
+                data-height="22"
+              ></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6" id="img-index">
+          <img src="/images/logo.png" alt="Imagem" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <h6>Sobre Nós</h6>
+                <hr />
+                <p>
+                  O nosso objetivo é divulgar e facilitar a comunicação entre
+                  feirantes e vendedores autônomos com o público.
+                </p>
+              </div>
+              <div class="col">
+                <h6>Links</h6>
+                <hr />
+                <div class="row" id="links-footer">
+                  <div class="col-md-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="/"
+                          ><i class="fas fa-home"></i> Página Inicial</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/duvidasFrequentes"
+                          ><i class="far fa-question-circle"></i> Dúvidas
+                          Frequentes</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="/sobrenos"
+                          ><i class="fas fa-users"></i> Sobre nós</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/contato.html"
+                          ><i class="far fa-envelope"></i> Contato</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col text-center">
+                <h6>Contate-nos</h6>
+                <hr />
+                <p>Alguma mensagem para nós.</p>
+              </div>
+            </div>
+            <div class="col">
+              <p class="allRightsReserved">
+                &copy; 2023 Todos os direitos reservados
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+    <script>
+      // Script para alternar o tema escuro
+      document
+        .getElementById("dark-theme-toggle")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("dark-theme");
+        });
+    </script>
+  </body>
+</html>

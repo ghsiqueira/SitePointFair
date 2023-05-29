@@ -1,0 +1,161 @@
+:root {
+  --main-color: #ffc15e;
+  --bg: #ce6a85;
+  --secundario: #77324d;
+  --border: 0.1rem solid #ffc15e;
+}
+
+* {
+  font-family: "Inria Sans";
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--secundario);
+  border-radius: 5rem;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 3.25vh !important;
+}
+
+.navbar-brand:hover {
+  color: #ffc15e !important;
+}
+
+.navbar-brand img {
+  height: 50px;
+  margin-right: 5px;
+}
+
+.navbar-nav .nav-link {
+  color: #000 !important;
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--main-color) !important;
+}
+
+#dark-theme-toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #000;
+}
+
+#dark-theme-toggle:hover {
+  color: var(--main-color);
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 12px;
+}
+
+footer h6 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+  text-align: center;
+}
+
+footer hr {
+  border-top: 1px solid #000;
+}
+
+footer p {
+  color: #000;
+}
+
+footer ul li a {
+  color: #000;
+}
+
+footer ul li a:hover {
+  color: rebeccapurple;
+}
+
+#links-footer {
+  text-align: center;
+}
+
+footer .allRightsReserved {
+  text-align: center;
+  font-size: 16px;
+}
+
+.dark-theme {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.dark-theme .navbar {
+  background-color: #333 !important;
+}
+
+.dark-theme .navbar-brand {
+  color: #fff;
+}
+
+.dark-theme .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.dark-theme .navbar-nav .nav-link:hover {
+  color: var(--bg) !important;
+}
+
+.dark-theme #dark-theme-toggle {
+  color: #fff;
+}
+
+.dark-theme #dark-theme-toggle:hover {
+  color: var(--bg) !important;
+}
+
+.dark-theme footer {
+  background-color: #333;
+}
+
+.dark-theme footer h6 {
+  color: #fff;
+}
+
+.dark-theme footer hr {
+  border-top: 1px solid #fff;
+}
+
+.dark-theme footer p {
+  color: #fff;
+}
+
+.dark-theme footer ul li a {
+  color: #fff;
+}
+
+.dark-theme footer ul li a:hover {
+  color: var(--main-color);
+}
