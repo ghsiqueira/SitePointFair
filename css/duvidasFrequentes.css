@@ -80,6 +80,16 @@ body {
   margin: 0;
 }
 
+.fa-solid {
+  font-weight: 900;
+  color: #000;
+}
+
+.dark-theme .fa-solid {
+  font-weight: 900;
+  color: #fff;
+}
+
 .show {
   display: block;
 }
