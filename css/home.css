@@ -46,6 +46,10 @@ body {
   color: var(--main-color);
 }
 
+.buttons a {
+  text-decoration: none;
+}
+
 #img-index {
   display: flex;
   justify-content: center;

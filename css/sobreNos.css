@@ -1,0 +1,48 @@
+/* Sobre Nós */
+#Team {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dev-person {
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+    flex-basis: calc(25% - 40px); /* 4 people in a row */
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+}
+
+.dev-person img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.dev-person p {
+    margin-top: 10px;
+    color: black;
+}
+
+.team2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team2 .dev-person {
+    flex-basis: calc(25% - 40px);
+    transform: translateY(0);
+}
+
+.team2 .dev-person:nth-child(1),
+.team2 .dev-person:nth-child(2),
+.team2 .dev-person:nth-child(3) {
+    margin-bottom: 20px;
+}
