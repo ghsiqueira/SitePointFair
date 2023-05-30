@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 :root {
   --main-color: #ffc15e;
@@ -8,7 +8,7 @@
 }
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 html::-webkit-scrollbar {
@@ -110,12 +110,28 @@ footer .allRightsReserved {
 }
 
 .dark-theme {
-  background-color: #444;
-  color: #ffffff;
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme body {
+  background-color: #333;
+}
+
+.dark-theme .container h3 {
+  color: #fff;
+}
+
+.dark-theme .container p {
+  color: #fff;
+}
+
+.dark-theme .navbar-toggler-icon {
+  color: #fff !important;
 }
 
 .dark-theme .navbar {
-  background-color: #333 !important;
+  background-color: #222 !important;
 }
 
 .dark-theme .navbar-brand {
@@ -138,8 +154,9 @@ footer .allRightsReserved {
   color: var(--bg) !important;
 }
 
-.dark-theme footer {
-  background-color: #333;
+.dark-theme .footer {
+  background-color: #222;
+  color: #fff;
 }
 
 .dark-theme footer h6 {
@@ -160,4 +177,8 @@ footer .allRightsReserved {
 
 .dark-theme footer ul li a:hover {
   color: var(--main-color);
+}
+
+.dark-theme .navbar-light .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="16" height="16"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
 }

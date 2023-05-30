@@ -1,9 +1,4 @@
-* {
-  font-family: "Inria Sans";
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 :root {
   --main-color: #ffc15e;
@@ -12,12 +7,17 @@
   --border: 0.1rem solid #ffc15e;
 }
 
+* {
+  font-family: "Inter", sans-serif;
+}
+
 body {
   min-height: 100vh;
 }
 
 .container h1 {
   color: var(--secundario);
+  font-weight: 700;
 }
 
 form {
@@ -101,7 +101,7 @@ button:disabled {
 }
 
 .error-message .error {
-  color: red;
+  color: rebeccapurple;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -135,4 +135,18 @@ button:disabled {
 
 .close-button:hover {
   text-decoration: underline;
+}
+
+.dark-theme .container h1 {
+  color: var(--main-color);
+}
+
+.dark-theme .error-message .error {
+  color: #000;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+  flex: none; /* Impede que a largura seja influenciada */
+  width: auto !important; /* Define a largura como automática */
 }
