@@ -11,6 +11,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #f8f9fa !important;
+}
+
 .duvidas-frequentes {
   text-align: center;
   margin-top: 40px;

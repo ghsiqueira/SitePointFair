@@ -31,7 +31,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .navbar {
-  background-color: #f8f9fa;
+  background-color: #ebebeb !important;
   padding: 10px;
 }
 
@@ -73,7 +73,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 footer {
-  background-color: #f8f9fa;
+  background-color: #ebebeb;
   padding: 12px;
 }
 

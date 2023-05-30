@@ -13,11 +13,15 @@
 
 body {
   min-height: 100vh;
+  background-color: #f8f9fa !important;
 }
 
 .container h1 {
-  color: var(--secundario);
-  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--main-color);
 }
 
 form {
@@ -61,7 +65,7 @@ input,
 textarea {
   margin-bottom: 1.5rem !important;
   color: var(--secundario);
-  background: lightyellow;
+  background: cornsilk;
   border: 0.125rem solid transparent;
   border-radius: 1.125rem;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -83,7 +87,7 @@ textarea {
 button {
   border: none;
   border-radius: 99px !important;
-  color: #000;
+  color: #fff;
   background: rebeccapurple;
   cursor: pointer;
   transition: 0.3s;
@@ -115,15 +119,17 @@ button:disabled {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: lightgrey;
+  background-color: lightyellow;
   color: white;
   padding: 1.5rem;
   text-align: center;
   border-radius: 0.5rem;
+  border: 2px solid #000;
 }
 
 .message h1 {
   margin-bottom: 1rem;
+  color: #000 !important;
 }
 
 .close-button {
@@ -144,7 +150,6 @@ button:disabled {
 .dark-theme .error-message .error {
   color: #000;
 }
-
 
 .custom-toggler .navbar-toggler-icon {
   flex: none; /* Impede que a largura seja influenciada */

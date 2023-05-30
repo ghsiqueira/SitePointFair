@@ -11,6 +11,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #f8f9fa !important;
+}
+
 /* Sobre Nós */
 #Team {
   text-align: center;
