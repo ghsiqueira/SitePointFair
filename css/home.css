@@ -50,7 +50,7 @@ body {
 }
 
 .buttons button:hover {
-  border-color: var(--secundario);
+  border: 2px solid var(--secundario);
   background-color: lightgoldenrodyellow;
   color: var(--secundario);
 }
@@ -89,12 +89,41 @@ body {
   transition: all 0.3s ease;
 }
 
+.btn-primary:active {
+  background-color: #444 !important;
+  border: 2px solid #ffc15e !important;
+  color: lightgoldenrodyellow !important;
+}
+
 .btn-primary:hover {
   transform: scale(1.1);
 }
 
 .btn-primary:hover.animate__animated {
   animation: bounce 1s;
+}
+
+#btn-baixar-app:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#btn-baixar-app:active {
+  background-color: lightgoldenrodyellow;
+  color: var(--secundario);
+  border: 0.125rem solid var(--secundario);
+}
+
+.dark-theme .buttons button:hover {
+  border: 2px solid var(--main-color);
+  background-color: #eee;
+  color: var(--secundario);
+}
+
+.dark-theme .btn-primary:active {
+  background-color: #efe !important;
+  border: 2px solid #ffc15e !important;
+  color: #000 !important;
 }
 
 @keyframes bounce {
