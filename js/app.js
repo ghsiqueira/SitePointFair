@@ -96,7 +96,7 @@ class FormSubmit {
 
 const formSubmit = new FormSubmit({
   form: "[data-form]",
-  button: "[data-button]",
+  button: ".submitBtn",
   successMessage: ".success-message",
   errorMessage: ".error-message",
 });

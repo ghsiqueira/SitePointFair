@@ -38,7 +38,7 @@ form {
 label,
 input,
 textarea,
-button {
+.submitBtn {
   display: block;
 }
 
@@ -48,7 +48,7 @@ label {
 
 input,
 textarea,
-button {
+.submitBtn {
   width: 100%;
   font: inherit;
   padding: 1rem;
@@ -78,7 +78,7 @@ textarea {
   resize: none;
 }
 
-button {
+.submitBtn {
   border: none;
   border-radius: 99px !important;
   color: #fff;
@@ -87,13 +87,13 @@ button {
   transition: 0.3s;
 }
 
-button:hover,
-button:focus {
+.submitBtn:hover,
+.submitBtn:focus {
   outline: none;
   background: var(--secundario);
 }
 
-button:disabled {
+.submitBtn:disabled {
   cursor: not-allowed;
   background: #555b69;
 }
@@ -128,9 +128,12 @@ button:disabled {
 
 .close-button {
   border: none;
-  color: white;
+  color: #000;
   padding: 0.5rem 1rem;
+  font-weight: 500;
   cursor: pointer;
+  background-color: var(--main-color);
+  border-radius: 99px;
 }
 
 .close-button:hover {
@@ -143,9 +146,4 @@ button:disabled {
 
 .dark-theme .error-message .error {
   color: #000;
-}
-
-.custom-toggler .navbar-toggler-icon {
-  flex: none; /* Impede que a largura seja influenciada */
-  width: auto !important; /* Define a largura como automática */
 }
