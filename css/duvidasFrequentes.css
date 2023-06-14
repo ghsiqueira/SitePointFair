@@ -9,6 +9,27 @@ body {
   background-color: #fff;
 }
 
+#cookie-consent {
+  background-color: #ebebeb;
+  color: #212529;
+  border: none;
+}
+
+#cookie-consent a {
+  color: var(--bg);
+}
+
+#cookie-consent button {
+  background-color: var(--main-color);
+  color: #000;
+  border: solid 1px #000;
+  font-weight: 600;
+}
+
+#cookie-consent button:hover {
+  background-color: var(--bg);
+}
+
 .duvidas-frequentes {
   text-align: center;
   margin-top: 40px;
@@ -80,11 +101,6 @@ body {
   color: #000;
 }
 
-.dark-theme .fa-solid {
-  font-weight: 900;
-  color: #fff;
-}
-
 .show {
   display: block;
 }
@@ -102,4 +118,29 @@ body {
 .link-form a:hover {
   text-decoration: underline;
   color: rebeccapurple;
+}
+
+.dark-theme .fa-solid {
+  font-weight: 900;
+  color: #fff;
+}
+
+.dark-theme #cookie-consent {
+  background-color: #222;
+  color: #f8f9fa;
+}
+
+.dark-theme #cookie-consent a {
+  color: var(--main-color);
+}
+
+.dark-theme #cookie-consent button {
+  background-color: var(--main-color);
+  color: #222;
+}
+
+.dark-theme #cookie-consent button:hover {
+  background-color: var(--bg);
+  color: #fff;
+  font-weight: 600;
 }

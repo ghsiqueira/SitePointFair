@@ -18,6 +18,10 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 
+#cookie-consent {
+  display: none;
+}
+
 .navbar {
   background-color: #ebebeb !important;
   padding: 10px;
@@ -120,10 +124,6 @@ footer .allRightsReserved {
 .dark-theme .container p {
   color: #fff;
 }
-/* 
-.dark-theme .navbar-toggler-icon {
-  color: #fff !important;
-} */
 
 .dark-theme .navbar {
   background-color: #222 !important;
@@ -149,7 +149,7 @@ footer .allRightsReserved {
   color: var(--bg) !important;
 }
 
-.dark-theme .footer {
+.dark-theme footer {
   background-color: #222;
   color: #fff;
 }
