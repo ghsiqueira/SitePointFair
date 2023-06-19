@@ -30,6 +30,11 @@ body {
   background-color: var(--bg);
 }
 
+.custom-container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #AboutUs {
   padding: 40px 0;
   font-family: "Inter" !important;
